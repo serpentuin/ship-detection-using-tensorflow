@@ -1,4 +1,4 @@
-# Environment Setups (Tested)
+# A.  Environment Setups (Testing in progress)
 
 | Requirement | Version/Description |
 | ---------- | ---------- |
@@ -12,7 +12,7 @@
 | Tensorflow **(install in step 4)** | 2.6.0 (as of September 8th, 2021)
 | Tensorflow-gpu **(install in step 4)** | 2.6.0 (as of September 8th, 2021)
 
-# Steps
+# B.  Steps
 
 ## Step 1 : Clone this repository into your machine using terminal.
 
