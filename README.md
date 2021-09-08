@@ -30,15 +30,15 @@ for **Unix/Ubuntu**
 `.\env\Scripts\activate`
 for **Windows**
 
-## Step 3 : Update pip version to the latest
+## Step 3 : Update pip version to the latest.
 
 `python -m pip install upgrade pip`
 
-## Step 4 : Install the required libraries
+## Step 4 : Install the required libraries.
 
 `pip install -r requirements.txt`
 
-## Step 5 : Install annotation tool (labelImg)
+## Step 5 : Install annotation tool (labelImg).
 
 ### Unix/Ubuntu
 
@@ -61,6 +61,6 @@ for **Windows**
 
 `python labelImg.py`
 
-## Step 6 : Install Tensorflow Object Detection API
+## Step 6 : Install Tensorflow Object Detection API.
 
 Work in progress. Will be updated soon :) .
