@@ -17,35 +17,52 @@ Object detection project implemented using Tensorflow Object Detection API that 
 
 # Steps
 
-## Step 1
-Open up the terminal and clone this repository into your machine.
+## Step 1 : Clone this repository into your machine using terminal.
 
 `git clone https://github.com/serpentuin/ship-detection-using-tensorflow.git`
 
-## Step 2
-Create Python virtual environment and activate it using terminal.
+## Step 2 : Create Python virtual environment and activate it using terminal.
 
 `cd ship-detection-using-tensorflow`
 
 `python -m venv env`
 
-`.\env\Scripts\activate`
-for Windows
-
 `source env/bin/activate`
-for Unix/Ubuntu
+for **Unix/Ubuntu**
 
-## Step 3
-Update pip version to the latest
+`.\env\Scripts\activate`
+for **Windows**
+
+## Step 3 : Update pip version to the latest
 
 `python -m pip install upgrade pip`
 
-## Step 4
-
-Install the required libraries
+## Step 4 : Install the required libraries
 
 `pip install -r requirements.txt`
 
-## Step 5 (Work in progress)
-Install annotation tool by running the `labelimg_installation.py` script
+## Step 5 : Install annotation tool (labelImg)
 
+### Unix/Ubuntu
+
+`git clone https://github.com/tzutalin/labelImg.git`
+
+`make qt5py3`
+
+`cd labelImg`
+
+`python labelImg.py`
+
+
+### Windows
+
+`git clone https://github.com/tzutalin/labelImg.git`
+
+`cd labelImg`
+
+`pyrcc5 -o libs/resources.py resources.qrc`
+
+`python labelImg.py`
+
+## Step 6 (work in progress)
+Install Tensorflow Object Detection API
