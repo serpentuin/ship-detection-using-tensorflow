@@ -67,6 +67,8 @@ Work in progress. Will be updated soon :) .
 
 # C.  Pretrained Detection Model Used
 
+The selected model is a detection model that is pre-trained on the [COCO 2017](https://cocodataset.org/#home) dataset.
+
 | Item | Details |
 | ---- | -------------------------------|
 | Name | [CenterNet HourGlass104 512x512](http://download.tensorflow.org/models/object_detection/tf2/20200713/centernet_hg104_512x512_coco17_tpu-8.tar.gz) |
