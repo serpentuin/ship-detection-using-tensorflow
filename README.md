@@ -64,3 +64,12 @@ for **Windows**
 ## Step 6 : Install Tensorflow Object Detection API.
 
 Work in progress. Will be updated soon :) .
+
+# C.  Pretrained Detection Model Used
+
+| Item | Details |
+| ---- | -------------------------------|
+| Name | [CenterNet HourGlass104 512x512](http://download.tensorflow.org/models/object_detection/tf2/20200713/centernet_hg104_512x512_coco17_tpu-8.tar.gz) |
+| Speed | 70 ms |
+| COCO mAP | 41.9 |
+| Outputs | Boxes |
