@@ -1,7 +1,3 @@
-# ship-detection-using-tensorflow
-
-Object detection project implemented using Tensorflow Object Detection API that aimed to detect and recognize the types of ship.
-
 # Environment Setups (Tested)
 
 | Requirement | Version/Description |
