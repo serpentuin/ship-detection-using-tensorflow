@@ -1,4 +1,4 @@
-# A.  Environment Setups (Testing in progress)
+# A.  Environment Setup (Testing in progress)
 
 | Requirement | Version/Description |
 | ---------- | ---------- |
