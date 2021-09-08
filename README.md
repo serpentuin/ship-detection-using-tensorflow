@@ -6,7 +6,7 @@ Object detection project implemented using Tensorflow Object Detection API that 
 | Requirement | Version/Description |
 | ---------- | ---------- |
 | Operating System | Windows 10 |
-| IDE (Compiler | Microsoft Visual Studio 2019 (MSVC 2019) |
+| IDE (Compiler) | Microsoft Visual Studio 2019 (MSVC 2019) |
 | CUDA-enabled GPU | NVIDIA GeForce GTX 1060 |
 | NVIDIA® GPU drivers | Version 471.96 (as of September 8th, 2021)
 | CUDA® Toolkit | CUDA® 11.2.0 (Dec 2020)
@@ -33,7 +33,7 @@ Create Python virtual environment and activate it using terminal.
 for Windows
 
 `source env/bin/activate`
-for Unix
+for Unix/Ubuntu
 
 ## Step 3
 Update pip version to the latest
@@ -45,3 +45,7 @@ Update pip version to the latest
 Install the required libraries
 
 `pip install -r requirements.txt`
+
+## Step 5 (Work in progress)
+Install annotation tool by running the `labelimg_installation.py` script
+
