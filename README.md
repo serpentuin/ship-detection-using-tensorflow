@@ -11,7 +11,7 @@
 | Python | 3.9.7 (as of September 8th, 2021) |
 | Tensorflow **(install in step 4)** | 2.6.0 (as of September 8th, 2021) |
 | Tensorflow-gpu **(install in step 4)** | 2.6.0 (as of September 8th, 2021) |
-| Protocol Buffers | [3.17.3](https://github.com/protocolbuffers/protobuf/releases/tag/v3.17.3) |
+| Protocol Buffers | [3.17.3](https://github.com/protocolbuffers/protobuf/releases/tag/v3.17.3) (Jun 2021) |
 
 # B.  Steps
 
