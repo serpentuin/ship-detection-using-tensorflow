@@ -61,7 +61,25 @@ for **Windows**
 
 `python labelImg.py`
 
-## Step 6 : Install Tensorflow Object Detection API.
+## Step 6 : Create folders using `create_model.py` script.
+
+```
+CUSTOM_MODEL_NAME = 'ship_centernet' 
+PRETRAINED_MODEL_NAME = 'centernet_hg104_512x512_coco17_tpu-8'
+PRETRAINED_MODEL_URL = 'http://download.tensorflow.org/models/object_detection/tf2/20200713/centernet_hg104_512x512_coco17_tpu-8.tar.gz'
+TF_RECORD_SCRIPT_NAME = 'generate_tfrecord.py'
+LABEL_MAP_NAME = 'label_map.pbtxt'
+```
+
+Above codes are the snippets from a part of codes in `create_folder.py`script. Please select a pre-trained model from [Tensorflow 2 Models Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) and be sure to change the following variables accordingly:
+
+```
+CUSTOM_MODEL_NAME = 
+PRETRAINED_MODEL_NAME = 
+PRETRAINED_MODEL_URL = 
+```
+
+## Step 7 : Install Tensorflow Object Detection API.
 
 Work in progress. Will be updated soon :) .
 
