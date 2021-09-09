@@ -79,7 +79,7 @@ PRETRAINED_MODEL_NAME =
 PRETRAINED_MODEL_URL = 
 ```
 
-Open the terminal, and run this command:
+Open the terminal, and run following command to create the necessary folders:
 
 `python create_model.py`
 
