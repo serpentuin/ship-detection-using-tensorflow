@@ -5,12 +5,13 @@
 | Operating System | Windows 10 |
 | IDE (Compiler) | Microsoft Visual Studio 2019 (MSVC 2019) |
 | CUDA-enabled GPU | NVIDIA GeForce GTX 1060 |
-| NVIDIA® GPU drivers | Version 471.96 (as of September 8th, 2021)
-| CUDA® Toolkit | CUDA® 11.2.0 (Dec 2020)
-| cuDNN SDK | 8.1.0 (January 26th, 2021) for CUDA 11.0, 11.1 and 11.2
-| Python | 3.9.7 (as of September 8th, 2021)
-| Tensorflow **(install in step 4)** | 2.6.0 (as of September 8th, 2021)
-| Tensorflow-gpu **(install in step 4)** | 2.6.0 (as of September 8th, 2021)
+| NVIDIA® GPU drivers | Version 471.96 (as of September 8th, 2021) |
+| CUDA® Toolkit | CUDA® 11.2.0 (Dec 2020) |
+| cuDNN SDK | 8.1.0 (January 26th, 2021) for CUDA 11.0, 11.1 and 11.2 |
+| Python | 3.9.7 (as of September 8th, 2021) |
+| Tensorflow **(install in step 4)** | 2.6.0 (as of September 8th, 2021) |
+| Tensorflow-gpu **(install in step 4)** | 2.6.0 (as of September 8th, 2021) |
+| Protocol Buffers | [3.17.3](https://github.com/protocolbuffers/protobuf/releases/tag/v3.17.3) |
 
 # B.  Steps
 
