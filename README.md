@@ -79,6 +79,10 @@ PRETRAINED_MODEL_NAME =
 PRETRAINED_MODEL_URL = 
 ```
 
+Open the terminal, and run this command:
+
+`python create_model.py`
+
 ## Step 7 : Install Tensorflow Object Detection API.
 
 Work in progress. Will be updated soon :) .
