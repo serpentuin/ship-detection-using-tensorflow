@@ -81,7 +81,7 @@ PRETRAINED_MODEL_URL =
 
 Open the terminal, and run following command to create the necessary folders:
 
-`python create_model.py`
+`python create_folder.py`
 
 ## Step 7 : Install Tensorflow Object Detection API.
 
