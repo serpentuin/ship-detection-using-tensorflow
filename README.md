@@ -80,11 +80,17 @@ PRETRAINED_MODEL_NAME =
 PRETRAINED_MODEL_URL = 
 ```
 
-Open the terminal, and run following command to create the necessary folders:
+Open the terminal, and run the following command to create the necessary folders:
 
 `python create_folder.py`
 
-## Step 7 : Install Tensorflow Object Detection API.
+## Step 7 : Install Protocol Buffer (Protobuf)
+
+Using the terminal, run the `install_protobuf.py` script to download and install Protocol Buffer version 3.17.3:
+
+`python install_protobuf.py`
+
+## Step 8 : Install Tensorflow Object Detection API.
 
 Work in progress. Will be updated soon :) .
 
