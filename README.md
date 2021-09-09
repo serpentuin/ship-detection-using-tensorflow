@@ -61,7 +61,7 @@ for **Windows**
 
 `python labelImg.py`
 
-## Step 6 : Create folders using `create_model.py` script.
+## Step 6 : Create folders using `create_folder.py` script.
 
 ```
 CUSTOM_MODEL_NAME = 'ship_centernet' 
