@@ -94,6 +94,12 @@ Using the terminal, run the `install_protobuf.py` script to download and install
 
 Work in progress. Will be updated soon :) .
 
+## Step 9 : Download the pretrained model.
+
+Using the terminal, run the `download_pretrained_model.py` script to download the pretrained model:
+
+`python download_pretrained_model.py`
+
 # C.  Pretrained Detection Model Used
 
 The selected model is a detection model that is pre-trained on the [COCO 2017](https://cocodataset.org/#home) dataset.
