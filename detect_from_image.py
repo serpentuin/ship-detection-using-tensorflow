@@ -1,11 +1,9 @@
 import os
 import tensorflow as tf
 import cv2
-import tkinter as tk
 import numpy as np
 import matplotlib
-matplotlib.use('TkAgg')
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as viz_utils
 from object_detection.builders import model_builder
@@ -28,8 +26,6 @@ def detect_fn(image):
     return detections
 
 category_index = label_map_util.create_category_index_from_labelmap(scripts['LABELMAP'])
-
-print(matplotlib.get_backend())
 
 IMAGE_PATH = os.path.join(paths['IMAGE_PATH'], 'test', 'twist_344.jpg')
 
@@ -57,9 +53,10 @@ viz_utils.visualize_boxes_and_labels_on_image_array(
             detections['detection_scores'],
             category_index,
             use_normalized_coordinates=True,
-            max_boxes_to_draw=5,
-            min_score_thresh=.8,
+            max_boxes_to_draw=1,
+            min_score_thresh=.5,
             agnostic_mode=False)
 
+matplotlib.use('Qt5Agg')
 plt.imshow(cv2.cvtColor(image_np_with_detections, cv2.COLOR_BGR2RGB))
 plt.show()
