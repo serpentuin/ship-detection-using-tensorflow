@@ -3,3 +3,9 @@ tensorflow-gpu == 2.6.0
 opencv-python
 pyqt5
 lxml
+tf_slim
+matplotlib
+pyyaml
+pytz
+gin-config==0.1.1
+tensorflow-addons
