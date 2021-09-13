@@ -110,3 +110,8 @@ The selected model is a detection model that is pre-trained on the [COCO 2017](h
 | Speed | 70 ms |
 | COCO mAP | 41.9 |
 | Outputs | Boxes |
+
+# D.  Sample Result
+
+![Sample Output](sample-output.png)
+
