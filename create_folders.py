@@ -1,10 +1,11 @@
 #importing required libraries
 import os
+import object_detection
 
 files = {
-    'CUSTOM_MODEL_NAME' : 'ship_centernet', 
-    'PRETRAINED_MODEL_NAME' : 'centernet_hg104_512x512_coco17_tpu-8',
-    'PRETRAINED_MODEL_URL' : 'http://download.tensorflow.org/models/object_detection/tf2/20200713/centernet_hg104_512x512_coco17_tpu-8.tar.gz',
+    'CUSTOM_MODEL_NAME' : 'ship_ssd_mobnet', 
+    'PRETRAINED_MODEL_NAME' : 'ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8',
+    'PRETRAINED_MODEL_URL' : 'http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8.tar.gz',
     'TF_RECORD_SCRIPT_NAME' : 'generate_tfrecord.py',
     'LABEL_MAP_NAME' : 'label_map.pbtxt',
 }
@@ -32,7 +33,4 @@ scripts = {
 
 for path in paths.values():
     if not os.path.exists(path):
-        if os.name == 'posix':
-            os.mkdir(path)
-        if os.name == 'nt':
             os.mkdir(path)
