@@ -136,11 +136,43 @@ Type the following command in the terminal to install the Tensorflow Object Dete
 
 `cd Tensorflow/models/research/slim && pip install -e . `
 
-## Step 11 : Download the pretrained model.
+## Step 11 : Verify the environment setup.
+
+Verify the setup using the following command to make sure we are good to go to the training step.
+
+`python Tensorflow\models\research\object_detection\builders\model_builder_tf2_test.py`
+
+If you are prompted with the "OK" message, it indicates that our installation is good, and we can proceed with the next step.
+
+## Step 12 : Download the pretrained object detection model.
+
+Make sure you have edit the codes in step 5 to install the desired pretrained object detection model.
 
 Using the terminal, run the `download_pretrained_model.py` script to download the pretrained model:
 
 `python download_pretrained_model.py`
+
+## Step 13 : Create label map.
+
+Run the `create_label_map.py` script in the terminal to prepare the label map files.
+
+`python create_label_map.py`
+
+## Step 14 : Create TF records.
+
+Firstly, download the TF record generator script into the 'Tensorflow\scripts' folder.
+
+`git clone https://github.com/nicknochnack/GenerateTFRecord Tensorflow\scripts`
+
+`python Tensorflow\scripts\generate_tfrecord.py -x Tensorflow\workspace\images\train -l Tensorflow\workspace\annotations\label_map.pbtxt -o Tensorflow\workspace\annotations\train.record`
+
+`python Tensorflow\scripts\generate_tfrecord.py -x Tensorflow\workspace\images\test -l Tensorflow\workspace\annotations\label_map.pbtxt -o Tensorflow\workspace\annotations\test.record`
+
+## Step 15 : 
+
+## Step 16 :
+
+## Step 17 :
 
 # C.  Pretrained Detection Model Used
 
