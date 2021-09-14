@@ -16,6 +16,8 @@ paths = {
     'APIMODEL_PATH': os.path.join('Tensorflow','models'),
     'ANNOTATION_PATH': os.path.join('Tensorflow', 'workspace','annotations'),
     'IMAGE_PATH': os.path.join('Tensorflow', 'workspace','images'),
+    'TRAIN_IMAGE_PATH' : os.path.join('Tensorflow', 'workspace','images', 'train'),
+    'TEST_IMAGE_PATH' : os.path.join('Tensorflow', 'workspace','images', 'test'),
     'MODEL_PATH': os.path.join('Tensorflow', 'workspace','models'),
     'PRETRAINED_MODEL_PATH': os.path.join('Tensorflow', 'workspace','pre-trained-models'),
     'CHECKPOINT_PATH': os.path.join('Tensorflow', 'workspace','models',files['CUSTOM_MODEL_NAME']), 
@@ -33,7 +35,4 @@ scripts = {
 
 for path in paths.values():
     if not os.path.exists(path):
-        if os.name == 'posix':
-            os.mkdir(path)
-        if os.name == 'nt':
             os.mkdir(path)
