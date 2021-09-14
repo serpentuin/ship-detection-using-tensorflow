@@ -166,7 +166,11 @@ Using the provided `generate_tfrecord.py` file, prepare the TF records for train
 
 `python generate_tfrecord.py -x Tensorflow\workspace\images\test -l Tensorflow\workspace\annotations\label_map.pbtxt -o Tensorflow\workspace\annotations\test.record`
 
-## Step 15 : 
+## Step 15 : Copy the configuration file of the pretrained model to our custom model.
+
+Using terminal, run the `copy_model_config_to_custom_model.py` file to copy the configuration file from the downloaded pretrained model to our custom model.
+
+`python copy_model_config_to_custom_model.py`
 
 ## Step 16 :
 
