@@ -94,7 +94,7 @@ Annotate all images until finish in the appropriate format. Refer to the followi
 
 After all images have been annotated. Split the images into two different category; **Train** and **Test**.
 
-You may divide it according to 85% : 25% ratio. Insert the images into the folder **Train** and **Test** accordingly.
+We may divide it according to 85% : 25% ratio. Insert the images into the folder **Train** and **Test** accordingly.
 
 ## Step 8 : Install Protocol Buffer (Protobuf).
 
@@ -142,11 +142,11 @@ Verify the setup using the following command to make sure we are good to go to t
 
 `python Tensorflow\models\research\object_detection\builders\model_builder_tf2_test.py`
 
-If you are prompted with the "OK" message, it indicates that our installation is good, and we can proceed with the next step.
+If we are prompted with the "OK" message, it indicates that our installation is good, and we can proceed with the next step.
 
 ## Step 12 : Download the pretrained object detection model.
 
-Make sure you have edit the codes in [step 5](https://github.com/serpentuin/ship-detection-using-tensorflow#step-5--create-folders-using-create_folderpy-script) to install the desired pretrained object detection model.
+Make sure we have edit the codes in [step 5](https://github.com/serpentuin/ship-detection-using-tensorflow#step-5--create-folders-using-create_folderpy-script) to install the desired pretrained object detection model.
 
 Using the terminal, run the `download_pretrained_model.py` script to download the pretrained model:
 
@@ -172,9 +172,45 @@ Using terminal, run the `copy_model_config_to_custom_model.py` file to copy the 
 
 `python copy_model_config_to_custom_model.py`
 
-## Step 16 :
+## Step 16 : Update config in our custom model for transfer learning.
 
-## Step 17 :
+Run the `update_config_for_transfer_learning.py` file in the terminal to update the configuration file in our custom model for transfer learning mode.
+
+`python update_config_for_transfer_learning.py`
+
+## Step 17 : Train the model.
+
+`python generate_training_script.py`
+
+Using terminal, generate the training script by running the `generate_training_script.py` file. Copy the printed commmand and run it in the terminal to initiate the training process.
+
+## Step 18 : Evaluate the model.
+
+`python generate_evaluation_script.py`
+
+Using terminal, generate the evaluation script by running the `generate_training_script.py` file. Copy the printed commmand and run it in the terminal to evaluate the training performance. Example of the training performance is as follow:
+
+![Sample Performance Evaluation Metric](sample-evaluation-snapshot.png)
+
+_Tips_ : Use **Ctrl+C** to exit from the evaluation prompt.
+
+## Step 19 : Detection from image.
+
+After the training process has finished, we can test our trained custom model to detect objects in our test images. Simply run the following command to detect object from our test images.
+
+`python detect_from_image.py`
+
+We can edit the following line in `detect_from_image.py` file to indicate which image in the test folder that are going to be used for the detection.
+
+```
+IMAGE_PATH = os.path.join(paths['IMAGE_PATH'], 'test', 'twist_375.jpg')
+```
+
+## Step 20 : Freeze the graph.
+
+Run the `generate_freezing_graph_script.py` file in the terminal to generate the saving command. Copy the command and run it in the terminal to save the model.
+
+`python generate_freezing_graph_script.py`
 
 # C.  Pretrained Detection Model Used
 
