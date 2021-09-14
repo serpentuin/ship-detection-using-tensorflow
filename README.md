@@ -146,7 +146,7 @@ If you are prompted with the "OK" message, it indicates that our installation is
 
 ## Step 12 : Download the pretrained object detection model.
 
-Make sure you have edit the codes in step 5 to install the desired pretrained object detection model.
+Make sure you have edit the codes in [step 5](https://github.com/serpentuin/ship-detection-using-tensorflow#step-5--create-folders-using-create_folderpy-script) to install the desired pretrained object detection model.
 
 Using the terminal, run the `download_pretrained_model.py` script to download the pretrained model:
 
@@ -160,13 +160,11 @@ Run the `create_label_map.py` script in the terminal to prepare the label map fi
 
 ## Step 14 : Create TF records.
 
-Firstly, download the TF record generator script into the 'Tensorflow\scripts' folder.
+Using the provided `generate_tfrecord.py` file, prepare the TF records for train and test images by typing the following commands in the terminal.
 
-`git clone https://github.com/nicknochnack/GenerateTFRecord Tensorflow\scripts`
+`python generate_tfrecord.py -x Tensorflow\workspace\images\train -l Tensorflow\workspace\annotations\label_map.pbtxt -o Tensorflow\workspace\annotations\train.record`
 
-`python Tensorflow\scripts\generate_tfrecord.py -x Tensorflow\workspace\images\train -l Tensorflow\workspace\annotations\label_map.pbtxt -o Tensorflow\workspace\annotations\train.record`
-
-`python Tensorflow\scripts\generate_tfrecord.py -x Tensorflow\workspace\images\test -l Tensorflow\workspace\annotations\label_map.pbtxt -o Tensorflow\workspace\annotations\test.record`
+`python generate_tfrecord.py -x Tensorflow\workspace\images\test -l Tensorflow\workspace\annotations\label_map.pbtxt -o Tensorflow\workspace\annotations\test.record`
 
 ## Step 15 : 
 
