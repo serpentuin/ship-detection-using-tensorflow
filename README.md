@@ -33,7 +33,7 @@ for **Windows**
 
 ## Step 3 : Update pip version to the latest.
 
-`python -m pip install upgrade pip`
+`python -m pip install --upgrade pip`
 
 ## Step 4 : Install the required libraries.
 
