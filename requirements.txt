@@ -9,5 +9,5 @@ tf_slim
 matplotlib
 pyyaml
 pytz
-gin-config==0.1.1
+gin-config==0.1.1 #having issue with linux OS
 tensorflow-addons
