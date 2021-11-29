@@ -39,7 +39,7 @@ for **Windows**
 
 `pip install -r requirements.txt`
 
-## Step 5 : Create folders using `create_folder.py` script.
+## Step 5 : Create folders using `create_folders.py` script.
 
 ```
 'CUSTOM_MODEL_NAME' : 'ship_mobnet', 
@@ -60,7 +60,7 @@ PRETRAINED_MODEL_URL =
 
 Open the terminal, and run the following command to create the necessary folders:
 
-`python create_folder.py`
+`python create_folders.py`
 
 ## Step 6 : Install annotation tool (labelImg).
 
