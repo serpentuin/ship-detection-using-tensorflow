@@ -162,9 +162,21 @@ Run the `create_label_map.py` script in the terminal to prepare the label map fi
 
 Using the provided `generate_tfrecord.py` file, prepare the TF records for train and test images by typing the following commands in the terminal.
 
+### Windows
+
 `python generate_tf_record.py -x Tensorflow\workspace\images\train -l Tensorflow\workspace\annotations\label_map.pbtxt -o Tensorflow\workspace\annotations\train.record`
 
+### Unix/Ubuntu
+
+`python generate_tf_record.py -x Tensorflow/workspace/images/train -l Tensorflow/workspace/annotations/label_map.pbtxt -o Tensorflow/workspace/annotations/train.record`
+
+### Windows
+
 `python generate_tf_record.py -x Tensorflow\workspace\images\test -l Tensorflow\workspace\annotations\label_map.pbtxt -o Tensorflow\workspace\annotations\test.record`
+
+### Unix/Ubuntu
+
+`python generate_tf_record.py -x Tensorflow/workspace/images/test -l Tensorflow/workspace/annotations/label_map.pbtxt -o Tensorflow/workspace/annotations/test.record`
 
 ## Step 15 : Copy the configuration file of the pretrained model to our custom model.
 
