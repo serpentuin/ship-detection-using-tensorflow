@@ -1,5 +1,5 @@
-tensorflow == 2.6.0
-tensorflow-gpu == 2.6.0
+#tensorflow==2.8.0
+tensorflow-gpu==2.8.0
 opencv-python
 wget
 GitPython
@@ -9,5 +9,4 @@ tf_slim
 matplotlib
 pyyaml
 pytz
-gin-config==0.1.1 #having issue with linux OS
 tensorflow-addons
