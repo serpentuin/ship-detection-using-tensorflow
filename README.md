@@ -74,7 +74,9 @@ Open the terminal, and run the following command to create the necessary folders
 
 `git clone https://github.com/tzutalin/labelImg.git`
 
-`pyrcc5 -o labelImg\libs\resources.py resources.qrc`
+`cd labelImg`
+
+`pyrcc5 -o libs\resources.py resources.qrc`
 
 ## Step 7 : Annotate the images using labelImg.
 
