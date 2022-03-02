@@ -17,7 +17,7 @@
 
 ## Step 1 : Clone this repository into your machine using terminal.
 
-`git clone https://github.com/serpentuin/ship-detection-using-tensorflow.git`
+`git clone https://github.com/serpentuin/tensorflow-object-detection.git`
 
 ## Step 2 : Create Python virtual environment and activate it using terminal.
 
